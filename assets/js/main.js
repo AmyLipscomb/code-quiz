@@ -21,7 +21,19 @@ var favoriteEl = document.createElement("div"); //change the tag for this
 
 h1El.textContent = "Ready to find out how much you know about coding?";
 
+//Questions I want to ask:
+// 1. Which operator is based on value and type? 
+// -Answer Choices: (a) == ; (b) === (*correct answer); (c) || ; (d) &&
 
+// 2. Which option is true?
+// -Answer Choices: (a) 0 == "0" (*correct answer); (b) 0 === "0" ; (c) 0 < 0; (d) 0 > 1; 
+
+//3. Which choice is an example of the primative type, string?
+// -Answer Choices: (a) 15; (b) "1128"; (c) false; (d) Choices "b & "
+
+body.appendChild(h1El);
+
+h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 
 
 
