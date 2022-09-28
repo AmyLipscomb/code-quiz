@@ -28,18 +28,55 @@ h1El.textContent = "Ready to find out how much you know about coding?";
 // 2. Which option is true?
 // -Answer Choices: (a) 0 == "0" (*correct answer); (b) 0 === "0" ; (c) 0 < 0; (d) 0 > 1; 
 
-//3. Which choice is an example of the primative type, string?
-// -Answer Choices: (a) 15; (b) "1128"; (c) false; (d) Choices "b & "
+// 3. Which choice is an example of the primative type, string?
+// -Answer Choices: (a) 15; (b) "1128"; (c) false; (d) "hello"; (e) Choices b & d (*correct answer);
+
+// 4. An array has to include which operator?
+// -Answer Choices: (a) && ; (b) === ; (c) [] (*correct answer); 
+
+// 5. Which is false about an array?
+// -Answer Choices: (a) It uses [] ; (b) It can hold multiple variables (boolean, number, string) ; (c) The first element will always be one (*correct answer- because the first element will always be zero)
+
+// 6. 
 
 body.appendChild(h1El);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 
 
+// var timeleftArray = [1,2,3,4,5,6,7,8,9,0] //Added this so that the variable would be defined.
 
-function startTimer(){
+var timerEl = document.getElementById('countdown');
 
+function countdown(){
+  var timeLeft = 5;
+
+// TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+var timeInterval = setInterval(function () {
+  console.log(timeLeft);
+  // subtract 1 second
+  timeLeft--;
+  timerEl.textContent = timeLeft;
+
+  if(timeLeft === 0){
+    // stop timer
+    clearInterval(timeInterval);
+
+    // call the displayMessage function
+    displayMessage();
+  }
+  
+}, 1000);
 }
+  
+
+
+
+
+
+
+
+
 function addQuestion(){
   // create the question elements
 
