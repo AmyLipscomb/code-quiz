@@ -23,6 +23,18 @@ function startQuiz(){
     btn4.setAttribute("value",questionsArr[index].opt4);
 }
 
+function qAnswer(){
+    qContainer.classList.replace("hide","show");
+    qHel.textContent=questionsArr[index].correct;
+    btn1.textContent=questionsArr[index].opt1;
+    btn2.textContent=questionsArr[index].opt2;
+    btn3.textContent=questionsArr[index].opt3;
+    btn4.textContent=questionsArr[index].opt4;
+    btn1.setAttribute("value",questionsArr[index].opt1);
+    btn2.setAttribute("value",questionsArr[index].opt2);
+    btn3.setAttribute("value",questionsArr[index].opt3);
+    btn4.setAttribute("value",questionsArr[index].opt4);
+} //Created this function to check the answer. Checked the site, and it's not doing anything. Need to look back at this.
 
 startBtn.addEventListener("click",(event)=>{
     event.preventDefault();
@@ -35,6 +47,7 @@ btnHolder.addEventListener("click",(event)=>{
     event.preventDefault();
     const userChoice=this.event.target.value;
     console.log(userChoice);
+    startQuiz(userChoice) //added this line on 9/29/2022 after tutor session. Checked the site, and it's not doing anything. Need to look back at this.
 })
 
 //After this function, create a function to check the answer. Which is going to take a parameter.
