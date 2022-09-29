@@ -10,16 +10,16 @@ console.log("Amy, this is a test to see if the JavaScript is connected");
 // need to keep the time
 
 
-var body = document.body;
-var h1El = document.createElement("h1");
-var infoEl = document.createElement("div"); //change the tag for this
-var imgEl = document.createElement("img"); //change the tag for this
-var kittenEl = document.createElement("div"); //change the tag for this
-var nameEl = document.createElement("div"); //change the tag for this
-var favoriteEl = document.createElement("div"); //change the tag for this
+// var body = document.body;
+// var h1El = document.createElement("h1");
+// var infoEl = document.createElement("div"); //change the tag for this
+// var imgEl = document.createElement("img"); //change the tag for this
+// var kittenEl = document.createElement("div"); //change the tag for this
+// var nameEl = document.createElement("div"); //change the tag for this
+// var favoriteEl = document.createElement("div"); //change the tag for this
 
 
-h1El.textContent = "Ready to find out how much you know about coding?";
+// h1El.textContent = "Ready to find out how much you know about coding?";
 
 //Questions I want to ask:
 // 1. Which operator is based on value and type? 

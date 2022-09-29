@@ -4,18 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Amy's Code Quiz</title> <!--Changed what was inside the <title> from "Document" to "Amy's Code Quiz"-->
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-body">
+      <p class="title has-text-centered">
+        Ready to find out how much you know about coding?
+      </p>
+      <button id="startBtn"   class="button is-large is-responsive is-align-self-center">
+        Start
+      </button>
+    </div>
+  </header>
   <h2 id="countdown"></h2> 
-  <section class="container">
+  <section id="question-container" class="container hide">
 
-    <h1 id="quiz-heading"></h1>
+    <h1 id="quiz-heading" class="title is-1"></h1>
 
-    <ul id="button-holder"></ul>
-    
+    <div id="button-holder">
+      <button id="btn1" class="button is-medium is-responsive">
+        Medium
+      </button>
+      <button id="btn2" class="button is-medium is-responsive">
+        Medium
+      </button>
+      <button id="btn3" class="button is-medium is-responsive">
+        Medium
+      </button>
+      <button id="btn4" class="button is-medium is-responsive">
+        Medium
+      </button>
+    </div>
+
   </section>
- 
-  <script src="assets/js/main.js" ></script>
+  <script src="assets/js/questions.js" ></script>
+  <script src="assets/js/script.js" ></script>
 </body>
 </html>
