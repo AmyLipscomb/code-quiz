@@ -40,4 +40,19 @@ const questionsArr=[
         opt4: " '1128' ",
         correct:" '1128' "
     },
+    {
+        question:"An array has to include which operator?",
+        opt1:" && ",
+        opt2: " === ",
+        opt3: " [] ",
+        opt4: " == ",
+        correct:" [] "
+    },
+
+
+
+
+
+
+
 ]

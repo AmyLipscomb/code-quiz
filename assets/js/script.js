@@ -1,4 +1,4 @@
-//Allows you to manipulate the html via JavaScript
+//Allows you to manipulate the html via JavaScript //Accessing the HTML elements
 const startBtn=document.querySelector("#startBtn");
 const heroEl=document.querySelector(".hero");
 const qContainer=document.querySelector("#question-container");
@@ -8,7 +8,8 @@ const btn1=document.querySelector("#btn1");
 const btn2=document.querySelector("#btn2");
 const btn3=document.querySelector("#btn3");
 const btn4=document.querySelector("#btn4");
-const index=0;
+var index=0;
+//const variables can never change. 
 
 function startQuiz(){
     qContainer.classList.replace("hide","show");
@@ -47,9 +48,18 @@ btnHolder.addEventListener("click",(event)=>{
     event.preventDefault();
     const userChoice=this.event.target.value;
     console.log(userChoice);
-    startQuiz(userChoice) //added this line on 9/29/2022 after tutor session. Checked the site, and it's not doing anything. Need to look back at this.
+    if(userChoice==questionsArr[index].correct){
+        console.log("correct");
+    }
+    else{
+        console.log("incorrect");
+    }
+    index++
+    startQuiz() //
 })
 
 //After this function, create a function to check the answer. Which is going to take a parameter.
 //This function is going to be called insided of the btnHolder, and I'm going to write 'UserChoice' within the startQuiz parentheses
 //Then make an if statement
+
+//when they click on the button is that a correct answer or not
