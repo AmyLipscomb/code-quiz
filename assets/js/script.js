@@ -8,9 +8,15 @@ const btn1=document.querySelector("#btn1");
 const btn2=document.querySelector("#btn2");
 const btn3=document.querySelector("#btn3");
 const btn4=document.querySelector("#btn4");
-var index=0;
-//const variables can never change. 
+const btn5=document.querySelector('#btn5'); //to connect the high score button from html to js
 
+const highScoreForm=document.querySelector("#highScore-page");
+
+var index=0;
+//^const variables can never change. So, had to change the index to a var instead.
+
+
+//Need to put code in here so that the function stops- not sure if it would be a return function? Ask Tutor
 function startQuiz(){
     qContainer.classList.replace("hide","show");
     qHel.textContent=questionsArr[index].question;
@@ -24,6 +30,7 @@ function startQuiz(){
     btn4.setAttribute("value",questionsArr[index].opt4);
 }
 
+//Check to see if this is correct w/tutor. 
 function qAnswer(){
     qContainer.classList.replace("hide","show");
     qHel.textContent=questionsArr[index].correct;
@@ -58,8 +65,23 @@ btnHolder.addEventListener("click",(event)=>{
     startQuiz() //
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //After this function, create a function to check the answer. Which is going to take a parameter.
 //This function is going to be called insided of the btnHolder, and I'm going to write 'UserChoice' within the startQuiz parentheses
 //Then make an if statement
 
 //when they click on the button is that a correct answer or not
+
+//look at Mod 4 Acitivity 26 (Local Storage Tools)

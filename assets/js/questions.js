@@ -10,13 +10,13 @@
 // -Answer Choices: (a) 15; (b) true ; (c) false; (d) "1128" (*correct answer); 
 
 // 4. An array has to include which operator?
-// -Answer Choices: (a) && ; (b) === ; (c) [] (*correct answer); 
+// -Answer Choices: (a) && ; (b) === ; (c) [] (*correct answer); (d) ==;
 
 // 5. Which is false about an array?
 // -Answer Choices: (a) It uses [] ; (b) It can hold multiple variables (boolean, number, string) ; (c) The first element will always be one (*correct answer- because the first element will always be zero)
 
 const questionsArr=[
-    {
+    { //Question 1
         question:"Which operator is based on value and type?",
         opt1:"== ",
         opt2: "=== ",
@@ -24,7 +24,8 @@ const questionsArr=[
         opt4: "&&",
         correct:"=== "
     },
-    {
+
+    { //Question 2
         question:"Which option is true?",
         opt1:"0=='0' ",
         opt2: "0==='0' ",
@@ -32,7 +33,8 @@ const questionsArr=[
         opt4: "0 > 1",
         correct:"0=='0' "
     },
-    {
+
+    { //Question 3
         question:"Which choice is an example of the primative type, string?",
         opt1:" 15 ",
         opt2: " true ",
@@ -40,18 +42,72 @@ const questionsArr=[
         opt4: " '1128' ",
         correct:" '1128' "
     },
-    {
-        question:"An array has to include which operator?",
-        opt1:" && ",
+
+    { //Question 4
+        question:"An array must include which operator?",
+        opt1:" &&  ",
         opt2: " === ",
-        opt3: " [] ",
+        opt3: " [ ] ",
         opt4: " == ",
-        correct:" [] "
+        correct:" [ ] "  //<--this keeps creating an error message. When I look in the console, it says that "it cannot read properties of undefined reading (reading 'question')" <-- Figured out why. It was because this was the last question. I believe I need to add something to my startQuiz function in the script JS so that once it ends, we won't get the error message.
+    },
+
+    { //Question 5
+        question:"Which statement is false about an array?",
+        opt1:" It uses [] ",
+        opt2: " It can hold multiple variables (boolean, number, string)  ",
+        opt3: " The first element will always be one ",
+        opt4: " This question was created in JS utilizing an array",
+        correct:" The first element will always be one "
+    },
+
+    { //Question 6
+        question:"Useful ways to debug are the following:",
+        opt1:" console.log ",
+        opt2: " command + f ",
+        opt3: " Call methods in devTools  ",
+        opt4: "All of the above.",
+        correct: "All of the above."
     },
 
 
+    { //Question 7
+        question:" What order is necessary to create an element?",
+        opt1:" Create, Modify, Append ",
+        opt2: " Append, Create, Modify ",
+        opt3: " Modify, Create, Append",
+        opt4: " Create, Append, Modify",
+        correct:" Create, Modify, Append "
+    },
+
+    { //Question 8
+        question:" filler question8",
+        opt1:" filler answer1 ",
+        opt2: " filler answer2 ",
+        opt3: " filler answer3 ",
+        opt4: "filler answer4 ",
+        correct:" filler answer3 "
+    },
 
 
+    { //Question 9
+        question:" filler question9",
+        opt1:" filler answer1 ",
+        opt2: " filler answer2 ",
+        opt3: " filler answer3 ",
+        opt4: "filler answer4 ",
+        correct:" filler answer1 "
+    },
+
+
+    { //Question 10
+        question:" filler question10",
+        opt1:" filler answer1 ",
+        opt2: " filler answer2 ",
+        opt3: " filler answer3 ",
+        opt4: "filler answer4 ",
+        correct:" filler answer2 "
+    },
 
 
 
