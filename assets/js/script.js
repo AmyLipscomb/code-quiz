@@ -10,6 +10,7 @@ const btn3=document.querySelector("#btn3");
 const btn4=document.querySelector("#btn4");
 const btn5=document.querySelector('#btn5'); //to connect the high score button from html to js
 
+
 const highScoreForm=document.querySelector("#highScore-page");
 
 var index=0;
@@ -19,6 +20,11 @@ var index=0;
 //Need to put code in here so that the function stops- not sure if it would be a return function? Ask Tutor
 function startQuiz(){
     qContainer.classList.replace("hide","show");
+    renderKeys();
+    countdown();
+}
+
+function renderKeys(){
     qHel.textContent=questionsArr[index].question;
     btn1.textContent=questionsArr[index].opt1;
     btn2.textContent=questionsArr[index].opt2;
@@ -61,11 +67,26 @@ btnHolder.addEventListener("click",(event)=>{
     else{
         console.log("incorrect");
     }
+    if (index >=questionsArr.length-1){
+        document.querySelector("#question-container").classList.add("hide"); //Removes the elements within the question container. Want to add the hide class, to hide the question form.
+        
+        console.log(highScoreForm);
+        highScoreForm.classList.remove("hide"); //Displays the form.
+
+
+        return;
+    }
     index++
-    startQuiz() //
+    renderKeys() 
 })
 
-
+btn5.addEventListener("click",function(event){
+    event.preventDefault();
+    var remainingScore=timeLeft;
+    localStorage.setItem
+    highScoreForm.classList.remove("hide");
+    
+})
 
 
 

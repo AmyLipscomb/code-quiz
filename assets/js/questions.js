@@ -49,7 +49,7 @@ const questionsArr=[
         opt2: " === ",
         opt3: " [ ] ",
         opt4: " == ",
-        correct:" [ ] "  //<--this keeps creating an error message. When I look in the console, it says that "it cannot read properties of undefined reading (reading 'question')" <-- Figured out why. It was because this was the last question. I believe I need to add something to my startQuiz function in the script JS so that once it ends, we won't get the error message.
+        correct:" [ ] "  
     },
 
     { //Question 5

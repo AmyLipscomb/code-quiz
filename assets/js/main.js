@@ -46,15 +46,17 @@ h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 
 // var timeleftArray = [1,2,3,4,5,6,7,8,9,0] //Added this so that the variable would be defined.
 
-var timerEl = document.getElementById('countdown');
+
+var timeLeft  //made it global
 
 function countdown(){
-  var timeLeft = 5;
+timeLeft=60;
 
 // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
 var timeInterval = setInterval(function () {
   console.log(timeLeft);
   // subtract 1 second
+  var timerEl = document.getElementById('countdown');
   timeLeft--;
   timerEl.textContent = timeLeft;
 
@@ -70,14 +72,7 @@ var timeInterval = setInterval(function () {
 }
   
 
-
-
-
-
-
-
-
-function addQuestion(){
+// function addQuestion(){
   // create the question elements
 
   // modify the text/attributes //Class 9/22/2022- Timeframe (01:34:19)
@@ -110,14 +105,14 @@ function addQuestion(){
 
     // if no other questions,
     // go to highscore screen
-}
+// }
 
-function startQuiz(){
+// function startQuiz(){
   // timer starts and I am presented with a question
   // need a function call to start the timer
 
   // need a function call to present the question
-}
+// }
 
 // eventListener here // when i click the start button
 
