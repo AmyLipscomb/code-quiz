@@ -39,9 +39,9 @@ console.log("Amy, this is a test to see if the JavaScript is connected");
 
 // 6. 
 
-body.appendChild(h1El);
+// body.appendChild(h1El);
 
-h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
+// h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 
 
 // var timeleftArray = [1,2,3,4,5,6,7,8,9,0] //Added this so that the variable would be defined.

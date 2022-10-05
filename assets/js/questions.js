@@ -81,32 +81,32 @@ const questionsArr=[
     },
 
     { //Question 8
-        question:" filler question8",
-        opt1:" filler answer1 ",
-        opt2: " filler answer2 ",
-        opt3: " filler answer3 ",
-        opt4: "filler answer4 ",
-        correct:" filler answer3 "
+        question:" Which is an example of the primative type, boolean?",
+        opt1:" 'i don't know' ",
+        opt2: " 5 ",
+        opt3: " true ",
+        opt4: " '5' ",
+        correct:" true "
     },
 
 
     { //Question 9
-        question:" filler question9",
-        opt1:" filler answer1 ",
-        opt2: " filler answer2 ",
-        opt3: " filler answer3 ",
-        opt4: "filler answer4 ",
-        correct:" filler answer1 "
+        question:" Which is an example of the primative type, number?",
+        opt1:" 60 ",
+        opt2: " '60' ",
+        opt3: " 'you're almost finished!' ",
+        opt4: " '12345' ",
+        correct:" 60 "
     },
 
 
     { //Question 10
-        question:" filler question10",
-        opt1:" filler answer1 ",
-        opt2: " filler answer2 ",
-        opt3: " filler answer3 ",
-        opt4: "filler answer4 ",
-        correct:" filler answer2 "
+        question:" In order to make a variable global, where should the variable be placed in relation to the function?",
+        opt1:" Within the function ",
+        opt2: " Outside of the function ",
+        opt3: " Below the function ",
+        opt4: " Beside the function ",
+        correct:" Outside of the function "
     },
 
 
