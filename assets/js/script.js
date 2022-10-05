@@ -17,7 +17,7 @@ var index=0;
 //^const variables can never change. So, had to change the index to a var instead.
 
 
-//Need to put code in here so that the function stops- not sure if it would be a return function? Ask Tutor
+
 function startQuiz(){
     qContainer.classList.replace("hide","show");
     renderKeys();
@@ -36,7 +36,7 @@ function renderKeys(){
     btn4.setAttribute("value",questionsArr[index].opt4);
 }
 
-//Check to see if this is correct w/tutor. 
+
 function qAnswer(){
     qContainer.classList.replace("hide","show");
     qHel.textContent=questionsArr[index].correct;
